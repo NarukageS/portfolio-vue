@@ -1,30 +1,26 @@
 <template>
-<div>
-  <transition name="fade">
-    <div class="home" v-if="show">
-      <HelloWorld />
-      <contact-section />
+    <div>
+        <transition name="fade">
+            <div class="l_main" v-if="show">
+                <div class="m_page-top">
+                    <h2 class="m_page_title">送信完了</h2>
+                    
+
+                    <p class="contact_message">お問い合わせありがとうございます</p>
+                </div>
+                
+            </div>
+        </transition>
     </div>
-  </transition>
-</div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-import contactSection from '@/components/contactSection'
-
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld,
-    contactSection
-  },
-  data() {
-    return {
-      show: false
-    }
-  },
+    data() {
+        return {
+            show: false,
+        }
+    },
     mounted() {
       //コンポーネントがマウントされるタイミングでフラグを書き換え->表示アニメーション
       this.show = true;
@@ -37,10 +33,12 @@ export default {
         next();
       }, 1000);
     },
+    
 }
 </script>
+
 <style scoped>
-  .fade-enter-active {
+    .fade-enter-active {
     transition:  1.5s;
     transform: translateY(100px);
     opacity: 0;
@@ -58,6 +56,10 @@ export default {
   .fade-leave-to {
     transform: translateY(100px);
     opacity: 0;
+  }
+
+  .contact_message {
+    font-size: 16px;
   }
 
 </style>

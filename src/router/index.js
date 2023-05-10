@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import ContactView from '../views/ContactView.vue'
 import SkillView from '../views/SkillView.vue'
 import WorksView from '../views/WorksView.vue'
+import ThanksView from '../views/ThanksView.vue'
 
 const routes = [
   {
@@ -32,6 +33,11 @@ const routes = [
     path: '/works',
     name: 'works',
     component: WorksView
+  },
+  {
+    path: '/thanks',
+    name: 'thanks',
+    component: ThanksView
   },
 ]
 

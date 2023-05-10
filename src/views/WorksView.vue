@@ -38,6 +38,7 @@
                             :period="work.period"
                             :ingenuity="work.ingenuity"
                             :skill="work.skill"
+                            :link="work.link"
                             @is-close="modal = $event"/>
                             </transition>
                         </li>
@@ -108,7 +109,8 @@ export default {
                     overview:"1ページ、レスポンシブ対応、CMS化（WordPress）",
                     period:"１ヶ月半",
                     ingenuity:"モノクロのシンプルなデザインにしてアニメーションで少し遊びました。",
-                    skill:"HTML、CSS、JS、jQuery、WordPress"
+                    skill:"HTML、CSS、JS、jQuery、WordPress",
+                    link: 'https://naru-portfolio.com/'
                 },
                 {
                     name:"鳳来弁当 様",
@@ -116,15 +118,17 @@ export default {
                     overview:"1ページ、レスポンシブ対応",
                     period:"１ヶ月",
                     ingenuity:"素のJSで全てのアニメーションを作成しました。",
-                    skill:"HTML、CSS、JS"
+                    skill:"HTML、CSS、JS",
+                    link: 'https://houraibentou.web.fc2.com/'
                 },
                 {
                     name:"ポートフォリオver2",
-                    image: require('@/assets/work01.jpg'),
+                    image: require('@/assets/work03.jpg'),
                     overview:"5ページ、レスポンシブ対応、SPA",
                     period:"１ヶ月",
                     ingenuity:"ポートフォリオをSPAにしました。",
-                    skill:"HTML、CSS、Vue.js"
+                    skill:"HTML、CSS、Vue.js",
+                    link: 'https://version2.naru-portfolio.com/'
                 },
                 
             ],
@@ -234,6 +238,9 @@ export default {
         display: flex;
         justify-content: space-around;
         margin-top: 40px;
+        gap: 40px;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     .works_content_item {

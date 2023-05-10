@@ -3,9 +3,9 @@
 
         <div id="overlay" @click.self="modalClose">
             <div id="content" class="top_works_content js_works_content">
-                <div class="top_works_img-wrapper">
+                <a :href="link" class="top_works_img-wrapper">
                     <img :src="url" alt="" class="top_works_img">
-                </div>
+                </a>
                 <div class="top_works_text">
                     <h3 class="top_works_title">{{name}}</h3>
                     <table class="top_works_table">
@@ -36,7 +36,7 @@
 
 <script>
 export default {
-    props:['url', 'name', 'overview', 'period', 'ingenuity', 'skill'],
+    props:['url', 'name', 'overview', 'period', 'ingenuity', 'skill', 'link'],
     methods: {
         modalClose() {
             this.$emit('is-close', false)

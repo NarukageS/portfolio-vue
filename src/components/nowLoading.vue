@@ -20,13 +20,11 @@ export default {
 
 <style scoped>
 body{
-    position: relative;
     padding:0;
     margin:0;
     width:100%;
     height:100vh;
     background:radial-gradient(#9b59b6, #8e44ad);
-    z-index: 100;
 }
 .wrapper{
     width:200px;

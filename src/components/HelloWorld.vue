@@ -8,18 +8,18 @@
           <v-vanta effect="waves" :options=options></v-vanta>
         </div>
         <div class="top_contents">
-          <button class="top_contents_btn">
+          <router-link to="/about" class="top_contents_btn">
             <p>ABOUT</p>
             <img class="top_contents_btn-image" src="@/assets/icon/about.png" alt="">
-          </button>
-          <button class="top_contents_btn">
+          </router-link>
+          <router-link to="/skill" class="top_contents_btn">
             <p>SKILL</p>
             <img class="top_contents_btn-image" src="@/assets/icon/skill.png" alt="">
-          </button>
-          <button class="top_contents_btn">
+          </router-link>
+          <router-link to="/works" class="top_contents_btn">
             <p>WORKS</p>
             <img class="top_contents_btn-image" src="@/assets/icon/works.png" alt="">
-          </button>
+          </router-link>
 
         </div>
       </div>
@@ -27,7 +27,7 @@
         <div class="top_about_icon">
           <a href="https://twitter.com/N82436111" class="top_about_icon-link">
             <img width="50" height="50"
-            src="@/assets//icon/twitter.png" alt="" class="top_about_icon-twitter">
+            src="@/assets/icon/twitter.png" alt="" class="top_about_icon-twitter">
           </a>
         </div>
         <div class="top_about_icon">
